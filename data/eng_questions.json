@@ -1,0 +1,3522 @@
+[
+ {
+  "num": 1,
+  "stem": "Do you have something to ____ me?",
+  "options": {
+   "A": "say",
+   "B": "tell",
+   "C": "speak",
+   "D": "talk"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 2,
+  "stem": "I hardly ____ take a taxi.",
+  "options": {
+   "A": "ever",
+   "B": "never",
+   "C": "always",
+   "D": "can"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 3,
+  "stem": "My ____ are reading, watching movies, and collecting stamps.",
+  "options": {
+   "A": "habits",
+   "B": "favorite",
+   "C": "hobbies",
+   "D": "Interest"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 4,
+  "stem": "My dog gets ____ when he hears the doorbell ring.",
+  "options": {
+   "A": "excite",
+   "B": "excited",
+   "C": "exciting",
+   "D": "excitedly"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 5,
+  "stem": "Every student needs to wear ____ uniform to school.",
+  "options": {
+   "A": "a",
+   "B": "an",
+   "C": "some",
+   "D": "any"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 6,
+  "stem": "I ____ made many friends since I've moved.",
+  "options": {
+   "A": "has",
+   "B": "have",
+   "C": "would",
+   "D": "had"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 7,
+  "stem": "What is the ____ answer to the question?",
+  "options": {
+   "A": "good",
+   "B": "better",
+   "C": "bad",
+   "D": "best"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 8,
+  "stem": "How many ____ are in a typical phone number?",
+  "options": {
+   "A": "dials",
+   "B": "number",
+   "C": "digits",
+   "D": "numeral"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 9,
+  "stem": "You need to walk ____ the train station in order to reach the electronics store.",
+  "options": {
+   "A": "pass",
+   "B": "past",
+   "C": "passed",
+   "D": "passing"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 10,
+  "stem": "After I finish work, I will be going home, ____ dinner, and then going to sleep.",
+  "options": {
+   "A": "have",
+   "B": "had",
+   "C": "having",
+   "D": "has"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 11,
+  "stem": "Is she the ____ one who knows how to use the copier?",
+  "options": {
+   "A": "alone",
+   "B": "lonely",
+   "C": "all",
+   "D": "only"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 12,
+  "stem": "The second assignment, ____ I will give you tomorrow, is easier than this one.",
+  "options": {
+   "A": "who",
+   "B": "what",
+   "C": "which",
+   "D": "when"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 13,
+  "stem": "If your back is hurting, I suggest you see a ____.",
+  "options": {
+   "A": "doctor",
+   "B": "dentist",
+   "C": "teacher",
+   "D": "coach"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 14,
+  "stem": "Megan and Mandy are ____ twins; they look exactly the same.",
+  "options": {
+   "A": "ideal",
+   "B": "identity",
+   "C": "identical",
+   "D": "indirect"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 15,
+  "stem": "I've come to the ____ that I need to practice more often.",
+  "options": {
+   "A": "realization",
+   "B": "recommendation",
+   "C": "reality",
+   "D": "realizing"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 16,
+  "stem": "Have you ____ any good movies lately?",
+  "options": {
+   "A": "see",
+   "B": "saw",
+   "C": "seen",
+   "D": "seeing"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 17,
+  "stem": "The weather has been very nice ____.",
+  "options": {
+   "A": "recent",
+   "B": "later",
+   "C": "lately",
+   "D": "before"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 18,
+  "stem": "Sally hasn't worked here ____ three years.",
+  "options": {
+   "A": "since",
+   "B": "for",
+   "C": "ago",
+   "D": "again"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 19,
+  "stem": "____ the price is reasonable, it's still too expensive for me.",
+  "options": {
+   "A": "Because",
+   "B": "Even",
+   "C": "Since",
+   "D": "Although"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 20,
+  "stem": "When Kenny received the ____, his coworkers threw him a party.",
+  "options": {
+   "A": "promote",
+   "B": "promoting",
+   "C": "promoted",
+   "D": "promotion"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 21,
+  "stem": "I rarely finish all the food I'm given, so I should ask for smaller ____.",
+  "options": {
+   "A": "amount",
+   "B": "proportions",
+   "C": "portions",
+   "D": "served"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 22,
+  "stem": "If you ____ to the store, will you get me a bottle of water?",
+  "options": {
+   "A": "go",
+   "B": "went",
+   "C": "gone",
+   "D": "going"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 23,
+  "stem": "No sooner had he left the room ____ the phone rang.",
+  "options": {
+   "A": "when",
+   "B": "than",
+   "C": "what",
+   "D": "why"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 24,
+  "stem": "It's important to get ____ with your coworkers.",
+  "options": {
+   "A": "above",
+   "B": "along",
+   "C": "forward",
+   "D": "near"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 25,
+  "stem": "Tonya went on a diet so that she could lose some ____.",
+  "options": {
+   "A": "weigh",
+   "B": "wait",
+   "C": "weight",
+   "D": "whey"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 26,
+  "stem": "____ for Henry, everyone finished their homework last night.",
+  "options": {
+   "A": "Accept",
+   "B": "Except",
+   "C": "Adapt",
+   "D": "Excerpt"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 27,
+  "stem": "They were very ____ with the inspection and found all of the problems.",
+  "options": {
+   "A": "through",
+   "B": "though",
+   "C": "throw",
+   "D": "thorough"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 28,
+  "stem": "All ____ guests must sign in at the front desk.",
+  "options": {
+   "A": "visit",
+   "B": "visiting",
+   "C": "visited",
+   "D": "visitors"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 29,
+  "stem": "Can you ____ me up at 6:00?",
+  "options": {
+   "A": "pick",
+   "B": "drop",
+   "C": "leave",
+   "D": "meet"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 30,
+  "stem": "Carrie finds ____ the questions (is) quite difficult.",
+  "options": {
+   "A": "answer",
+   "B": "answers",
+   "C": "answering",
+   "D": "answered"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 31,
+  "stem": "Could I ____ your phone for a moment?",
+  "options": {
+   "A": "borrow",
+   "B": "lend",
+   "C": "give",
+   "D": "loan"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 32,
+  "stem": "It's ____ for me to study when there is too much noise.",
+  "options": {
+   "A": "hardly",
+   "B": "difficulty",
+   "C": "difficult",
+   "D": "hardy"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 33,
+  "stem": "Would you ____ go home now or stay here longer?",
+  "options": {
+   "A": "prefer",
+   "B": "rather",
+   "C": "like",
+   "D": "know"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 34,
+  "stem": "____ your hand if you know the answer.",
+  "options": {
+   "A": "Raise",
+   "B": "Rise",
+   "C": "Raising",
+   "D": "Rose"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 35,
+  "stem": "I don't know ____ he is telling the truth or not.",
+  "options": {
+   "A": "weather",
+   "B": "whether",
+   "C": "which",
+   "D": "whom"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 36,
+  "stem": "The person _____ lives across the hall is very noisy.",
+  "options": {
+   "A": "who",
+   "B": "which",
+   "C": "when",
+   "D": "what"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 37,
+  "stem": "Brian swims very ____, so he often wins swimming competitions.",
+  "options": {
+   "A": "good",
+   "B": "poor",
+   "C": "well",
+   "D": "poorly"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 38,
+  "stem": "There are too many different colors being used, which makes the report look ____.",
+  "options": {
+   "A": "confused",
+   "B": "confuse",
+   "C": "confusing",
+   "D": "confined"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 39,
+  "stem": "As I was watching TV, the phone rang and ____ me.",
+  "options": {
+   "A": "interrupt",
+   "B": "interrupted",
+   "C": "interrupting",
+   "D": "interruptible"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 40,
+  "stem": "Cindy ____ had four days to work on this report already.",
+  "options": {
+   "A": "is",
+   "B": "have",
+   "C": "will",
+   "D": "has"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 41,
+  "stem": "She has beautiful, ____ hair.",
+  "options": {
+   "A": "cunning",
+   "B": "curly",
+   "C": "curling",
+   "D": "curved"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 42,
+  "stem": "I haven't had a ____ in two years!",
+  "options": {
+   "A": "summer",
+   "B": "weekend",
+   "C": "free time",
+   "D": "vacation"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 43,
+  "stem": "Many people think it's more ____ to take a plane than a train.",
+  "options": {
+   "A": "convenient",
+   "B": "convenience",
+   "C": "convene",
+   "D": "converted"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 44,
+  "stem": "Skydiving is a very ____ sport.",
+  "options": {
+   "A": "danger",
+   "B": "dangerous",
+   "C": "dark",
+   "D": "dagger"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 45,
+  "stem": "I haven't ____ him in a while.",
+  "options": {
+   "A": "talked",
+   "B": "saw",
+   "C": "spoken",
+   "D": "seen"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 46,
+  "stem": "If I ____ you, I would go back to school.",
+  "options": {
+   "A": "was",
+   "B": "were",
+   "C": "had",
+   "D": "am"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 47,
+  "stem": "Denise is not very good at ____ secrets.",
+  "options": {
+   "A": "keep",
+   "B": "kept",
+   "C": "keeping",
+   "D": "keeps"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 48,
+  "stem": "Irene had a(n) ____ for breakfast.",
+  "options": {
+   "A": "omelet",
+   "B": "quiche",
+   "C": "sandwich",
+   "D": "cereal"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 49,
+  "stem": "Randy had never used ____ before he went to Asia.",
+  "options": {
+   "A": "chopstick",
+   "B": "chop",
+   "C": "sticks",
+   "D": "chopsticks"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 50,
+  "stem": "The answer is ____ that one.",
+  "options": {
+   "A": "obvious",
+   "B": "obviously",
+   "C": "oblivious",
+   "D": "correctly"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 51,
+  "stem": "There are too ____ people on the boat.",
+  "options": {
+   "A": "many",
+   "B": "much",
+   "C": "lots",
+   "D": "fewer"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 52,
+  "stem": "All of the cars are ____ behind the building.",
+  "options": {
+   "A": "stop",
+   "B": "go",
+   "C": "parked",
+   "D": "Drove"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 53,
+  "stem": "I need to ____ my computer in order to be able to use certain programs.",
+  "options": {
+   "A": "update",
+   "B": "updating",
+   "C": "updated",
+   "D": "undated"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 54,
+  "stem": "You need to ____ the road to get to the bank.",
+  "options": {
+   "A": "across",
+   "B": "crossed",
+   "C": "cross",
+   "D": "opposite"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 55,
+  "stem": "We need someone to ____ the meeting on Thursday.",
+  "options": {
+   "A": "lead",
+   "B": "rake",
+   "C": "led",
+   "D": "make"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 56,
+  "stem": "____ you like to come to my house?",
+  "options": {
+   "A": "Where",
+   "B": "How",
+   "C": "Could",
+   "D": "Would"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 57,
+  "stem": "John gave me a nice ____.",
+  "options": {
+   "A": "give",
+   "B": "gift",
+   "C": "presence",
+   "D": "giving"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 58,
+  "stem": "If you feel tired, take a ____.",
+  "options": {
+   "A": "sit",
+   "B": "sitting",
+   "C": "seat",
+   "D": "space"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 59,
+  "stem": "We are going to ____ at three o'clock.",
+  "options": {
+   "A": "leave",
+   "B": "leaving",
+   "C": "leaf",
+   "D": "left"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 60,
+  "stem": "Greg ____ two tickets to a concert in the mail.",
+  "options": {
+   "A": "received",
+   "B": "took",
+   "C": "gave",
+   "D": "opened"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 61,
+  "stem": "I will be there ____ 15 minutes.",
+  "options": {
+   "A": "in",
+   "B": "later",
+   "C": "before",
+   "D": "at"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 62,
+  "stem": "Have you ____ of that restaurant?",
+  "options": {
+   "A": "known",
+   "B": "seen",
+   "C": "heard",
+   "D": "eaten"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 63,
+  "stem": "I think it's a ____ to not tell him the truth.",
+  "options": {
+   "A": "mistake",
+   "B": "fault",
+   "C": "trouble",
+   "D": "difficulty"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 64,
+  "stem": "We need to finish this by Monday; ____, everyone must work over the weekend.",
+  "options": {
+   "A": "because",
+   "B": "however",
+   "C": "although",
+   "D": "therefore"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 65,
+  "stem": "I was ____ to bring two guests to the party at my office.",
+  "options": {
+   "A": "allow",
+   "B": "allowing",
+   "C": "allowed",
+   "D": "allowance"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 66,
+  "stem": "When the timer goes ____, take the food out of the oven.",
+  "options": {
+   "A": "on",
+   "B": "off",
+   "C": "out",
+   "D": "in"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 67,
+  "stem": "How do you ____ that in English?",
+  "options": {
+   "A": "say",
+   "B": "call",
+   "C": "talk",
+   "D": "speak"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 68,
+  "stem": "My computer is unable to ____ to the Internet.",
+  "options": {
+   "A": "context",
+   "B": "collect",
+   "C": "connect",
+   "D": "correct"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 69,
+  "stem": "I like action movies because they're ____.",
+  "options": {
+   "A": "romantic",
+   "B": "funny",
+   "C": "exciting",
+   "D": "confusing"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 70,
+  "stem": "Can you ____ what you just said? I couldn't hear you.",
+  "options": {
+   "A": "repeat",
+   "B": "review",
+   "C": "again",
+   "D": "redo"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 71,
+  "stem": "If I ____ the competition, I will be upset.",
+  "options": {
+   "A": "loose",
+   "B": "lost",
+   "C": "lose",
+   "D": "loosen"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 72,
+  "stem": "I prefer sitting next to the ____ so that I can have more leg room.",
+  "options": {
+   "A": "isle",
+   "B": "aisle",
+   "C": "island",
+   "D": "inlet"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 73,
+  "stem": "Ray got new ____ because he was having trouble seeing.",
+  "options": {
+   "A": "glass",
+   "B": "glasses",
+   "C": "glassware",
+   "D": "glassed"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 74,
+  "stem": "The ____ weren't good enough, so we got lost.",
+  "options": {
+   "A": "directors",
+   "B": "direct",
+   "C": "direction",
+   "D": "directions"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 75,
+  "stem": "It's always a good idea to trust your first ____ when answering a question on a test.",
+  "options": {
+   "A": "extinct",
+   "B": "instinct",
+   "C": "distinct",
+   "D": "succinct"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 76,
+  "stem": "Yolanda never told anyone that she was in ____.",
+  "options": {
+   "A": "debit",
+   "B": "bankrupt",
+   "C": "debt",
+   "D": "credit"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 77,
+  "stem": "I've never ____ a horse before.",
+  "options": {
+   "A": "ride",
+   "B": "ridden",
+   "C": "drive",
+   "D": "driven"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 78,
+  "stem": "It's easiest to get there ____ bus.",
+  "options": {
+   "A": "on",
+   "B": "in",
+   "C": "at",
+   "D": "by"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 79,
+  "stem": "A committee was in charge of ____ where the company picnic would take place.",
+  "options": {
+   "A": "memorizing",
+   "B": "thinking",
+   "C": "deciding",
+   "D": "detecting"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 80,
+  "stem": "To make a good impression at an interview, it's important to be ____.",
+  "options": {
+   "A": "punctuation",
+   "B": "punctual",
+   "C": "punctuality",
+   "D": "pronounce"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 81,
+  "stem": "My company is looking for a new ____ to work with.",
+  "options": {
+   "A": "manufacture",
+   "B": "manufactured",
+   "C": "manufacturing",
+   "D": "manufacturer"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 82,
+  "stem": "All dentists recommend flossing as a way to ____ gum disease.",
+  "options": {
+   "A": "prevent",
+   "B": "preventing",
+   "C": "prevented",
+   "D": "prevention"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 83,
+  "stem": "The detective ____ that Joseph had committed the crime.",
+  "options": {
+   "A": "pointed",
+   "B": "concluded",
+   "C": "included",
+   "D": "reminded"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 84,
+  "stem": "Maintaining morale is ____ for employee satisfaction.",
+  "options": {
+   "A": "ssence",
+   "B": "especially",
+   "C": "essential",
+   "D": "Essay"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 85,
+  "stem": "Do you know when the meeting will ____?",
+  "options": {
+   "A": "open",
+   "B": "beginning",
+   "C": "start",
+   "D": "go"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 86,
+  "stem": "William ____ me to the event.",
+  "options": {
+   "A": "accompanied",
+   "B": "companion",
+   "C": "companied",
+   "D": "combined"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 87,
+  "stem": "If the product is defective, you can ask for a(n) ____.",
+  "options": {
+   "A": "exchange",
+   "B": "change",
+   "C": "new",
+   "D": "refund"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 88,
+  "stem": "Kindergarten teachers always speak ____ to their students.",
+  "options": {
+   "A": "friendly",
+   "B": "kindly",
+   "C": "hearty",
+   "D": "kind"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 89,
+  "stem": "There are more than ____ muffins for everyone to have two.",
+  "options": {
+   "A": "adequate",
+   "B": "some",
+   "C": "enough",
+   "D": "acceptable"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 90,
+  "stem": "After much ____, Penny was given the promotion.",
+  "options": {
+   "A": "consider",
+   "B": "considerate",
+   "C": "considered",
+   "D": "consideration"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 91,
+  "stem": "These documents need to be ____ by the head office.",
+  "options": {
+   "A": "certify",
+   "B": "certified",
+   "C": "certification",
+   "D": "certainly"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 92,
+  "stem": "We need to ____ these books by subject.",
+  "options": {
+   "A": "category",
+   "B": "characteristic",
+   "C": "categorize",
+   "D": "characterize"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 93,
+  "stem": "This food tastes ____ than I thought it would.",
+  "options": {
+   "A": "bad",
+   "B": "worse",
+   "C": "worst",
+   "D": "worsening"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 94,
+  "stem": "I'm very ____. I try to stay away from unlucky things.",
+  "options": {
+   "A": "superfluous",
+   "B": "superb",
+   "C": "superficial",
+   "D": "superstitious"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 95,
+  "stem": "Can you ____ a good place for camping?",
+  "options": {
+   "A": "recommend",
+   "B": "recommendation",
+   "C": "recommended",
+   "D": "recommending"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 96,
+  "stem": "It might seem expensive at first, but the price is actually ____.",
+  "options": {
+   "A": "negotiator",
+   "B": "negotiated",
+   "C": "negotiable",
+   "D": "negotiate"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 97,
+  "stem": "Tracy loses her ____ often.",
+  "options": {
+   "A": "angry",
+   "B": "temper",
+   "C": "mood",
+   "D": "atmosphere"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 98,
+  "stem": "Only five applicants have been ____ for interviews.",
+  "options": {
+   "A": "applied",
+   "B": "affected",
+   "C": "supplied",
+   "D": "selected"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 99,
+  "stem": "Henry and Yvonne are not very ____; they never agree on anything.",
+  "options": {
+   "A": "complete",
+   "B": "company",
+   "C": "compatible",
+   "D": "corresponding"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 100,
+  "stem": "Our department was ____ 15 minutes to prepare for the meeting.",
+  "options": {
+   "A": "given",
+   "B": "allow",
+   "C": "rehearsed",
+   "D": "got"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 101,
+  "stem": "I had to ____ the bicycle I bought.",
+  "options": {
+   "A": "resemble",
+   "B": "assembly",
+   "C": "assemble",
+   "D": "ensemble"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 102,
+  "stem": "The procedure is so ____ that I can't figure out what to do.",
+  "options": {
+   "A": "unusually",
+   "B": "complicated",
+   "C": "simple",
+   "D": "ordinary"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 103,
+  "stem": "____ he usually loves dessert, he didn't eat any tonight.",
+  "options": {
+   "A": "Because",
+   "B": "So",
+   "C": "Hence",
+   "D": "Although"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 104,
+  "stem": "This knife is too ____ to cut anything.",
+  "options": {
+   "A": "dull",
+   "B": "sharp",
+   "C": "boring",
+   "D": "bending"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 105,
+  "stem": "Mitch was not ____ for the position, so he wasn't hired.",
+  "options": {
+   "A": "skilled",
+   "B": "qualified",
+   "C": "practiced",
+   "D": "accomplished"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 106,
+  "stem": "Which building is the tallest ____ the world?",
+  "options": {
+   "A": "of",
+   "B": "at",
+   "C": "in",
+   "D": "from"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 107,
+  "stem": "He is too lazy to go to ____ a difficult school.",
+  "options": {
+   "A": "so",
+   "B": "such",
+   "C": "what",
+   "D": "that"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 108,
+  "stem": "I just ____ someone say my name.",
+  "options": {
+   "A": "spoke",
+   "B": "recognized",
+   "C": "listened",
+   "D": "heard"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 109,
+  "stem": "Maggie was late because she needed to ____ her daughter to the hospital.",
+  "options": {
+   "A": "send",
+   "B": "take",
+   "C": "watch",
+   "D": "make"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 110,
+  "stem": "He ____ likes meeting with his friends on the weekend.",
+  "options": {
+   "A": "very",
+   "B": "really",
+   "C": "exactly",
+   "D": "such"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 111,
+  "stem": "You should consult a(n) ____ about this problem.",
+  "options": {
+   "A": "experience",
+   "B": "specialty",
+   "C": "expert",
+   "D": "proficient"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 112,
+  "stem": "My company is looking for a person ____ with creating spreadsheets.",
+  "options": {
+   "A": "rather",
+   "B": "instead",
+   "C": "preferably",
+   "D": "sooner"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 113,
+  "stem": "Many high school students worry about their ____.",
+  "options": {
+   "A": "popular",
+   "B": "populous",
+   "C": "popularity",
+   "D": "popularizes"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 114,
+  "stem": "The employees hoped that the meeting would be more ____ than the last one.",
+  "options": {
+   "A": "information",
+   "B": "informative",
+   "C": "informally",
+   "D": "informer"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 115,
+  "stem": "Judy became a teacher because she was ____ to helping children.",
+  "options": {
+   "A": "dedicate",
+   "B": "dedicated",
+   "C": "dedicating",
+   "D": "dedication"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 116,
+  "stem": "Dr. Phillips was ____ to speak at the prestigious university.",
+  "options": {
+   "A": "examined",
+   "B": "provided",
+   "C": "inquired",
+   "D": "invited"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 117,
+  "stem": "No ____ knowledge of registration software is needed for this job.",
+  "options": {
+   "A": "prior",
+   "B": "before",
+   "C": "sooner",
+   "D": "ahead"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 118,
+  "stem": "Did you ____ who was missing from class today?",
+  "options": {
+   "A": "notify",
+   "B": "attention",
+   "C": "notice",
+   "D": "observance"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 119,
+  "stem": "I would prefer to sit ____ to my sister at dinner.",
+  "options": {
+   "A": "across",
+   "B": "next",
+   "C": "by",
+   "D": "up"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 120,
+  "stem": "I can't go out this weekend because I have too many ____ to do.",
+  "options": {
+   "A": "responsibilities",
+   "B": "chores",
+   "C": "cleaning",
+   "D": "routines"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 121,
+  "stem": "I was ____ by the number of skyscrapers in Hong Kong.",
+  "options": {
+   "A": "amaze",
+   "B": "amazing",
+   "C": "amazed",
+   "D": "amazingly"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 122,
+  "stem": "____ care is very expensive in some places.",
+  "options": {
+   "A": "Health",
+   "B": "Healthy",
+   "C": "Healthful",
+   "D": "Healthiness"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 123,
+  "stem": "There's no way that this will fit in the closet; it's too ____!",
+  "options": {
+   "A": "tiny",
+   "B": "bulky",
+   "C": "compact",
+   "D": "agile"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 124,
+  "stem": "My father ____ me to drive when I was 18.",
+  "options": {
+   "A": "showed",
+   "B": "demonstrated",
+   "C": "explained",
+   "D": "taught"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 125,
+  "stem": "The new product was ____ across the country in December.",
+  "options": {
+   "A": "begun",
+   "B": "launched",
+   "C": "led",
+   "D": "opened"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 126,
+  "stem": "If the hotel has no ____, you won't be able to stay there.",
+  "options": {
+   "A": "available",
+   "B": "emptiness",
+   "C": "vacancies",
+   "D": "openings"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 127,
+  "stem": "It's very ____ to make mistakes when learning something new.",
+  "options": {
+   "A": "usually",
+   "B": "commonly",
+   "C": "casual",
+   "D": "common"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 128,
+  "stem": "When you are finished using the computer, make sure to ____ it down.",
+  "options": {
+   "A": "turn",
+   "B": "shut",
+   "C": "close",
+   "D": "click"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 129,
+  "stem": "Although we've worked in the same office for two years, I've never ____ to him.",
+  "options": {
+   "A": "introduced",
+   "B": "seen",
+   "C": "met",
+   "D": "talked"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 130,
+  "stem": "I bought a ____ computer.",
+  "options": {
+   "A": "secondhand",
+   "B": "handmade",
+   "C": "hand-me-down",
+   "D": "newly"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 131,
+  "stem": "My shirt is ____, so I need to wear a different one.",
+  "options": {
+   "A": "broken",
+   "B": "used",
+   "C": "torn",
+   "D": "separated"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 132,
+  "stem": "It's ____ midnight.",
+  "options": {
+   "A": "close",
+   "B": "nearly",
+   "C": "nearby",
+   "D": "soon"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 133,
+  "stem": "I'm going to ____ a salad for dinner.",
+  "options": {
+   "A": "cook",
+   "B": "take",
+   "C": "make",
+   "D": "bake"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 134,
+  "stem": "When waiting for a train, please line up ____ the yellow line.",
+  "options": {
+   "A": "inside",
+   "B": "next",
+   "C": "above",
+   "D": "behind"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 135,
+  "stem": "My dance club has over fifty ____.",
+  "options": {
+   "A": "people",
+   "B": "members",
+   "C": "associates",
+   "D": "colleagues"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 136,
+  "stem": "My dog always gets ____ by thunderstorms.",
+  "options": {
+   "A": "fearful",
+   "B": "coward",
+   "C": "frightened",
+   "D": "scary"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 137,
+  "stem": "I've never tried that before, and ____ has my friend.",
+  "options": {
+   "A": "so",
+   "B": "never",
+   "C": "also",
+   "D": "neither"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 138,
+  "stem": "I received an important e-mail from my boss two days ____.",
+  "options": {
+   "A": "ago",
+   "B": "before",
+   "C": "now",
+   "D": "past"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 139,
+  "stem": "I'm sorry, but I think you have ____ me for someone else.",
+  "options": {
+   "A": "mistake",
+   "B": "mistook",
+   "C": "mistaken",
+   "D": "mistaking"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 140,
+  "stem": "The ____ felt much better after the surgery.",
+  "options": {
+   "A": "patience",
+   "B": "patient",
+   "C": "patiently",
+   "D": "paternal"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 141,
+  "stem": "Kenny is looking for a ____ tutor to help him with his Spanish.",
+  "options": {
+   "A": "privacy",
+   "B": "privately",
+   "C": "privatize",
+   "D": "private"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 142,
+  "stem": "If you want to swim far, you must be able to hold your ____ for a long time.",
+  "options": {
+   "A": "breath",
+   "B": "breathe",
+   "C": "breathing",
+   "D": "breathable"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 143,
+  "stem": "If I knew ____ he was, I would tell you his name.",
+  "options": {
+   "A": "how",
+   "B": "which",
+   "C": "who",
+   "D": "what"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 144,
+  "stem": "I can't eat peanuts because I am ____ to them.",
+  "options": {
+   "A": "sick",
+   "B": "allergic",
+   "C": "affected",
+   "D": "unhealthy"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 145,
+  "stem": "____ all my friends, Sarah is the one I can really count on in a crisis.",
+  "options": {
+   "A": "From",
+   "B": "With",
+   "C": "Of",
+   "D": "About"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 146,
+  "stem": "I think you ____ get the job if you went to the interview.",
+  "options": {
+   "A": "would",
+   "B": "had",
+   "C": "will",
+   "D": "can"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 147,
+  "stem": "I've lost a lot of ____ since starting my diet.",
+  "options": {
+   "A": "weigh",
+   "B": "weight",
+   "C": "weighing",
+   "D": "weighted"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 148,
+  "stem": "I need to figure out the ____ to this question before I go to class.",
+  "options": {
+   "A": "reason",
+   "B": "explanation",
+   "C": "answer",
+   "D": "response"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 149,
+  "stem": "It's ____ whether or not he will win the nomination.",
+  "options": {
+   "A": "unclear",
+   "B": "unnoticed",
+   "C": "understood",
+   "D": "unthinkable"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 150,
+  "stem": "When I was a teenager, I was very _____. But now, it’s easier for me to talk to people.",
+  "options": {
+   "A": "happy",
+   "B": "lazy",
+   "C": "popular",
+   "D": "shy"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 151,
+  "stem": "Lena doesn’t want to go _____ with John because she is afraid of water.",
+  "options": {
+   "A": "dancing",
+   "B": "hiking",
+   "C": "sailing",
+   "D": "shopping"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 152,
+  "stem": "Cindy enjoys _____ her dad read stories to her before bed.",
+  "options": {
+   "A": "to listen to",
+   "B": "listening to",
+   "C": "listen to",
+   "D": "listens to"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 153,
+  "stem": "Dad is busy cooking in the kitchen. Dinner will be _____ in ten minutes.",
+  "options": {
+   "A": "free",
+   "B": "full",
+   "C": "medium",
+   "D": "ready"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 154,
+  "stem": "There are so many new _____ in the office. It’ll take me some time to remember who is who.",
+  "options": {
+   "A": "faces",
+   "B": "ideas",
+   "C": "rules",
+   "D": "tools"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 155,
+  "stem": "I feel like a _____. I was looking for my keys for hours but they have been in my pocket the\nwhole time.",
+  "options": {
+   "A": "fool",
+   "B": "ghost",
+   "C": "king",
+   "D": "stranger"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 156,
+  "stem": "Mr. and Mrs. Wu have three daughters. Two are in high school, and _____ is in elementary\nschool.",
+  "options": {
+   "A": "each",
+   "B": "the other",
+   "C": "the one",
+   "D": "the next"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 157,
+  "stem": "It is hard for trees to _____ along this beach because of the strong winds from the sea.",
+  "options": {
+   "A": "blow",
+   "B": "build",
+   "C": "follow",
+   "D": "grow"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 158,
+  "stem": "Christmas _____ and I want to visit my aunt abroad. Do you have any plans yet?",
+  "options": {
+   "A": "came",
+   "B": "comes",
+   "C": "is coming",
+   "D": "was coming"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 159,
+  "stem": "Jo won’t be happy if you’re late for his party tonight, so _____ sure that you arrive on time.",
+  "options": {
+   "A": "make",
+   "B": "makes",
+   "C": "to make",
+   "D": "is making"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 160,
+  "stem": "You may have a long drive because of the terrible _____. There are usually a lot of cars and\nbuses during this time.",
+  "options": {
+   "A": "experience",
+   "B": "machine",
+   "C": "service",
+   "D": "traffic"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 161,
+  "stem": "In the future, there will _____ be greater basketball players than Stephen Curry, but now we\nbelieve he is the best!",
+  "options": {
+   "A": "again",
+   "B": "already",
+   "C": "never",
+   "D": "perhaps"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 162,
+  "stem": "I guess the rainwater has come in from the kitchen. See? _____ of the windows are closed\nexcept the one in the kitchen.",
+  "options": {
+   "A": "All",
+   "B": "Both",
+   "C": "Most",
+   "D": "Some"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 163,
+  "stem": "_____machines have been used to pick fruits for a long time, they were not used on\nstrawberry farms until several years ago.",
+  "options": {
+   "A": "Although",
+   "B": "Because",
+   "C": "Before",
+   "D": "If"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 164,
+  "stem": "There are online videos that teach you exercises you can do at home. They’ll _____ you a trip\nto the gym, and some money too.",
+  "options": {
+   "A": "cost",
+   "B": "give",
+   "C": "keep",
+   "D": "save"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 165,
+  "stem": "Jane’s parents are always happy to see their grandchildren, but mine _____ less so when I\nvisit them with my kids.",
+  "options": {
+   "A": "is",
+   "B": "are",
+   "C": "do",
+   "D": "does"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 166,
+  "stem": "Before she _____ about it, you should tell Daphne you broke her favorite cup.",
+  "options": {
+   "A": "asks",
+   "B": "asked",
+   "C": "was asking",
+   "D": "will ask"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 167,
+  "stem": "It was very windy this morning. Some of the shirts on the balcony were blown away _____ in\nthe pond.",
+  "options": {
+   "A": "fell",
+   "B": "and fell",
+   "C": "fallen",
+   "D": "and fallen"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 168,
+  "stem": "My _____ hurts so much that I cannot even turn my head.",
+  "options": {
+   "A": "arm",
+   "B": "knee",
+   "C": "neck",
+   "D": "stomach"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 169,
+  "stem": "Our school basketball team won the national game last night. We are so _____ them.",
+  "options": {
+   "A": "popular with",
+   "B": "proud of",
+   "C": "sorry for",
+   "D": "worried about"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 170,
+  "stem": "Tomorrow is Sam’s last day in the office. Nobody knows why he decided to _____.",
+  "options": {
+   "A": "hide",
+   "B": "leave",
+   "C": "pack",
+   "D": "walk"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 171,
+  "stem": "It’s not a good idea to go mountain climbing in this bad _____. We should wait until the\ntyphoon goes away.",
+  "options": {
+   "A": "chance",
+   "B": "dream",
+   "C": "habit",
+   "D": "weather"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 172,
+  "stem": "Chris loves walking with Anna on snowy days, but Anna hates _____ very much.",
+  "options": {
+   "A": "them",
+   "B": "so",
+   "C": "one",
+   "D": "it"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 173,
+  "stem": "Lora likes to eat bananas that are already a little brown on the outside, and so _____ I.",
+  "options": {
+   "A": "am",
+   "B": "do",
+   "C": "have",
+   "D": "will"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 174,
+  "stem": "Your refrigerator shouldn’t be making loud noises now, but if it _____ does, just give me a\ncall and I’ll come check it again.",
+  "options": {
+   "A": "already",
+   "B": "even",
+   "C": "finally",
+   "D": "still"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 175,
+  "stem": "After winning money in the card game, Jay decided to try again. He felt that he might also be\n_____ a second time.",
+  "options": {
+   "A": "famous",
+   "B": "interested",
+   "C": "lucky",
+   "D": "ready"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 176,
+  "stem": "The knife doesn’t cut very well. It’s not as _____ as before.",
+  "options": {
+   "A": "bright",
+   "B": "heavy",
+   "C": "quick",
+   "D": "sharp"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 177,
+  "stem": "John will stay with his sister until he _____ an apartment.",
+  "options": {
+   "A": "will find",
+   "B": "would find",
+   "C": "finds",
+   "D": "found"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 178,
+  "stem": "Students _____ to go on the school trip should ask their parents first.",
+  "options": {
+   "A": "who want",
+   "B": "want",
+   "C": "who they want",
+   "D": "what they want"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 179,
+  "stem": "The temple sits alone in the mountains at a height of 3,000m _____ sea level.",
+  "options": {
+   "A": "above",
+   "B": "at",
+   "C": "below",
+   "D": "in"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 180,
+  "stem": "Patty spent several days planning to invite Charlie to dinner, _____ she couldn’t say a word\nwhen they met.",
+  "options": {
+   "A": "but",
+   "B": "if",
+   "C": "or",
+   "D": "so"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 181,
+  "stem": "I can’t tell you what I think of the movie because I _____ it. I’ll probably watch it this\nSaturday.",
+  "options": {
+   "A": "am not seeing",
+   "B": "don’t see",
+   "C": "haven’t seen",
+   "D": "won’t see"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 182,
+  "stem": "The new guy at the help desk answers calls like a _____. There are no ups and downs in his\nvoice and you can’t tell if he is happy or sad.",
+  "options": {
+   "A": "father",
+   "B": "foreigner",
+   "C": "radio",
+   "D": "robot"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 183,
+  "stem": "Jasmine planned to spend her summer in the country, but right after she got there, she started\nto _____ the noise in the city.",
+  "options": {
+   "A": "enjoy",
+   "B": "mind",
+   "C": "miss",
+   "D": "notice"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 184,
+  "stem": "“Bad traffic” is perhaps the _____ excuse for being late when your boss knows it only takes\nyou five minutes to walk to work.",
+  "options": {
+   "A": "easiest",
+   "B": "oldest",
+   "C": "smartest",
+   "D": "worst"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 185,
+  "stem": "The housework in Mr. and Mrs. Wang’s family _____ between them and their kids.\nEveryone’s got their own job to do.",
+  "options": {
+   "A": "is shared",
+   "B": "are shared",
+   "C": "shares",
+   "D": "share"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 186,
+  "stem": "I want to find another dentist because _____ pulled out a good tooth last time I went to him.",
+  "options": {
+   "A": "I",
+   "B": "me",
+   "C": "mine",
+   "D": "myself"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 187,
+  "stem": "Mom: Linda, you’ve been playing computer games all evening! Have you finished your\nreport?\nLinda: Well, _____ most of it this afternoon, and I’ll finish it by Friday.",
+  "options": {
+   "A": "I would do",
+   "B": "I did",
+   "C": "I was doing",
+   "D": "I’ll do"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 188,
+  "stem": "Dennis enjoys _____ in public. He is proud of his beautiful voice.",
+  "options": {
+   "A": "dancing",
+   "B": "drawing",
+   "C": "shopping",
+   "D": "singing"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 189,
+  "stem": "Mrs. Johnson can’t hear very well. If you need to talk to her, you must _____.",
+  "options": {
+   "A": "explain",
+   "B": "hurry",
+   "C": "listen",
+   "D": "shout"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 190,
+  "stem": "People got very excited when they watched Ms. Smith _____ at the party.",
+  "options": {
+   "A": "danced",
+   "B": "dancing",
+   "C": "has danced",
+   "D": "to dance"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 191,
+  "stem": "I tried on these shoes in several different _____, and I thought the white pair looked best on\nme.",
+  "options": {
+   "A": "colors",
+   "B": "prices",
+   "C": "shapes",
+   "D": "sizes"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 192,
+  "stem": "Rex did not feel the earthquake this morning. He _____ in the park at the time.",
+  "options": {
+   "A": "jogged",
+   "B": "was jogging",
+   "C": "has jogged",
+   "D": "would jog"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 193,
+  "stem": "Mr. Lee has worked in the same store for ten years; he’s never thought about _____ his job.",
+  "options": {
+   "A": "changing",
+   "B": "finding",
+   "C": "remembering",
+   "D": "starting"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 194,
+  "stem": "I didn’t take the bus today because it was ______. All the seats were taken and a lot of\nstudents were standing.",
+  "options": {
+   "A": "dirty",
+   "B": "fast",
+   "C": "full",
+   "D": "wrong"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 195,
+  "stem": "Don’t go away when you’re cooking, _____ the food might burn.",
+  "options": {
+   "A": "but",
+   "B": "if",
+   "C": "or",
+   "D": "so"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 196,
+  "stem": "Jerry wanted to know _____ he was kicked off the soccer team, but no one gave him a good\nreason.",
+  "options": {
+   "A": "where",
+   "B": "when",
+   "C": "whether",
+   "D": "why"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 197,
+  "stem": "Jenny is already forty, doesn’t have a job and often makes trouble for her parents. To them,\nshe is really a(n) _____ .",
+  "options": {
+   "A": "daughter",
+   "B": "example",
+   "C": "gift",
+   "D": "headache"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 198,
+  "stem": "Ed and Jill _____ camping this weekend, so they have to finish their homework by Friday.",
+  "options": {
+   "A": "went",
+   "B": "were going",
+   "C": "are going",
+   "D": "have gone"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 199,
+  "stem": "Doraemon, a blue Japanese robot cat, has hated mice since his ears by a mouse.",
+  "options": {
+   "A": "bit",
+   "B": "bite",
+   "C": "were bitten",
+   "D": "have bitten"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 200,
+  "stem": "If we play some interesting games in class, there _____ more fun in learning English.",
+  "options": {
+   "A": "are",
+   "B": "has",
+   "C": "will be",
+   "D": "will have"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 201,
+  "stem": "The _____ of this shop was so bad; I never got any answer after I emailed them my\nquestions.",
+  "options": {
+   "A": "item",
+   "B": "business",
+   "C": "price",
+   "D": "service"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 202,
+  "stem": "It’s not easy to see those islands clearly from here on sunny days, and it’s even less _____ to\nsee them on cloudy days.",
+  "options": {
+   "A": "difficult",
+   "B": "lucky",
+   "C": "possible",
+   "D": "special"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 203,
+  "stem": "Do you remember the CD I was looking for for months? I _____ found it in a small shop.\nLook, here it is!",
+  "options": {
+   "A": "almost",
+   "B": "even",
+   "C": "finally",
+   "D": "still"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 204,
+  "stem": "Business at Jane’s shop has not been good these days. And the new supermarket across the\nstreet only makes things _____.",
+  "options": {
+   "A": "easier",
+   "B": "worse",
+   "C": "more boring",
+   "D": "more convenient"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 205,
+  "stem": "Scott wasn’t sure if the young woman before him was pulled him out of a car on fire.",
+  "options": {
+   "A": "who",
+   "B": "the one",
+   "C": "the one she",
+   "D": "the one who"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 206,
+  "stem": "I _____ swimming for several years before I went to this high school. I gave it up because of\nheavy schoolwork.",
+  "options": {
+   "A": "have practiced",
+   "B": "am practicing",
+   "C": "practiced",
+   "D": "would practice"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 207,
+  "stem": "Frank Kane is so good in the movie that many people _____ he will win the best actor prize.",
+  "options": {
+   "A": "expect",
+   "B": "forget",
+   "C": "notice",
+   "D": "plan"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 208,
+  "stem": "The new medicine that just came out on the market _____ thousands of lives.",
+  "options": {
+   "A": "and saved",
+   "B": "has saved",
+   "C": "saving",
+   "D": "to save"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 209,
+  "stem": "Now I often think of those days with Pip, my pet dog. When I read in my room, he _____\nquietly beside me.",
+  "options": {
+   "A": "will come and sit",
+   "B": "comes and sits",
+   "C": "has come and sat",
+   "D": "used to come and sit"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 210,
+  "stem": "The movie starts at two o’clock, _____ let’s meet at the theater at one forty-five.",
+  "options": {
+   "A": "so",
+   "B": "or",
+   "C": "if",
+   "D": "because"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 211,
+  "stem": "Peter is afraid of the dark. He even leaves the _____ on when sleeping.",
+  "options": {
+   "A": "computer",
+   "B": "fans",
+   "C": "lights",
+   "D": "music"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 212,
+  "stem": "Pam is a _____ baseball player; she has more fans than any other player on her team.",
+  "options": {
+   "A": "boring",
+   "B": "heavy",
+   "C": "popular",
+   "D": "rich"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 213,
+  "stem": "I did not do my homework, so my teacher said I _____ stay after school to finish it.",
+  "options": {
+   "A": "failed to",
+   "B": "had to",
+   "C": "hoped to",
+   "D": "used to"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 214,
+  "stem": "Kevin has only enough money for the bag or the shoes. That is a hard ____ to make because\nhe likes them both.",
+  "options": {
+   "A": "choice",
+   "B": "gift",
+   "C": "rule",
+   "D": "trick"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 215,
+  "stem": "It was _____ for us to answer the math question because we’ve done the same kind of\nquestions many times.",
+  "options": {
+   "A": "common",
+   "B": "easy",
+   "C": "safe",
+   "D": "special"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 216,
+  "stem": "Although it took me lots of time _____ a big meal for ten people, I was happy that everyone\nenjoyed it.",
+  "options": {
+   "A": "prepare",
+   "B": "to prepare",
+   "C": "preparing",
+   "D": "prepared"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 217,
+  "stem": "Don’t let the children swim in the river. We don’t know how _____ it is. It could be\ndangerous.",
+  "options": {
+   "A": "deep",
+   "B": "far",
+   "C": "long",
+   "D": "thick"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 218,
+  "stem": "Bob is _____ of the boys in the family. He never does any housework. His brothers at least\ntake out the garbage sometimes.",
+  "options": {
+   "A": "lazier",
+   "B": "the lazy",
+   "C": "the lazier",
+   "D": "the laziest"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 219,
+  "stem": "Aunt Gina has lived in this town for more than sixty years, so she _____ it very well.",
+  "options": {
+   "A": "will know",
+   "B": "knew",
+   "C": "knows",
+   "D": "was going to know"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 220,
+  "stem": "We won’t see the sun even after the typhoon leaves, because the news said that heavier rain\nwill soon _____.",
+  "options": {
+   "A": "catch",
+   "B": "follow",
+   "C": "move",
+   "D": "stop"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 221,
+  "stem": "Yesterday when I got home from work, my brother _____ for dinner, so he invited me to join\nhim.",
+  "options": {
+   "A": "goes out",
+   "B": "went out",
+   "C": "has gone out",
+   "D": "was going out"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 222,
+  "stem": "You were _____ not to lend Amy money. She never gives back what she borrows.",
+  "options": {
+   "A": "crazy",
+   "B": "helpful",
+   "C": "wise",
+   "D": "wrong"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 223,
+  "stem": "Have you found a summer job yet? Mr. Firth _____ someone to take care of his kids during\nthe vacation. Maybe you can talk to him.",
+  "options": {
+   "A": "has looked for",
+   "B": "is looking for",
+   "C": "looks for",
+   "D": "was looking for"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 224,
+  "stem": "David looked out of the balcony window and saw a woman get in his car _____ away.",
+  "options": {
+   "A": "drive",
+   "B": "drove",
+   "C": "and drive",
+   "D": "and drove"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 225,
+  "stem": "The police haven’t found the little girl who _____ at a supermarket. They’ll keep doing all\nthey can to find her.",
+  "options": {
+   "A": "took away",
+   "B": "taken away",
+   "C": "has taken away",
+   "D": "was taken away"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 226,
+  "stem": "Buses to the airport only come once every hour, and we just missed _____. Why don’t we\ntake a taxi?",
+  "options": {
+   "A": "another",
+   "B": "it",
+   "C": "one",
+   "D": "them"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 227,
+  "stem": "Ariel _____ every night for a week before her Chinese test and got a very good grade.",
+  "options": {
+   "A": "studied",
+   "B": "studies",
+   "C": "has studied",
+   "D": "was going to study"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 228,
+  "stem": "Listen! The baby _____ in the bedroom. Why don’t you go in and take a look?",
+  "options": {
+   "A": "cried",
+   "B": "cries",
+   "C": "is crying",
+   "D": "will cry"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 229,
+  "stem": "Jill is _____ that the city park is closed for the music festival because now she can’t jog\nthere.",
+  "options": {
+   "A": "excited",
+   "B": "proud",
+   "C": "scared",
+   "D": "unhappy"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 230,
+  "stem": "Steven wants to be a _____, because he loves to watch people enjoy the food he prepares.",
+  "options": {
+   "A": "cook",
+   "B": "doctor",
+   "C": "driver",
+   "D": "farmer"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 231,
+  "stem": "Paul misses his parents a lot. He _____ them since he came to work in Taiwan a year ago.",
+  "options": {
+   "A": "didn’t see",
+   "B": "doesn’t see",
+   "C": "hasn’t seen",
+   "D": "won’t see"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 232,
+  "stem": "Our teacher Ms. Wu seldom laughs, but when she _____, everyone in the same building can\nhear her.",
+  "options": {
+   "A": "can",
+   "B": "does",
+   "C": "has",
+   "D": "will"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 233,
+  "stem": "My sister is coming to my home today. She _____ with me for a week.",
+  "options": {
+   "A": "stays",
+   "B": "stayed",
+   "C": "has stayed",
+   "D": "will stay"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 234,
+  "stem": "Edward had worked as a computer engineer for ten years. This _____ helped him a lot when\nhe started his own computer shop.",
+  "options": {
+   "A": "chance",
+   "B": "experience",
+   "C": "hobby",
+   "D": "knowledge"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 235,
+  "stem": "If you’re interested in our business plan, this number and ask for Ms. Lee. She’ll answer your\nquestions.",
+  "options": {
+   "A": "calling",
+   "B": "call",
+   "C": "and call",
+   "D": "to call"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 236,
+  "stem": "Jimmy would not get up for breakfast, _____ his dad had already tried to pull him from his\nbed several times.",
+  "options": {
+   "A": "although",
+   "B": "because",
+   "C": "if",
+   "D": "until"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 237,
+  "stem": "Duncan spent all his money trying to _____ the bookstore his mom left him. Sadly, the\nbusiness never got better, and he had to close it in the end.",
+  "options": {
+   "A": "build",
+   "B": "buy",
+   "C": "save",
+   "D": "start"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 238,
+  "stem": "Fiona loves listening to her children sing songs _____ at school.",
+  "options": {
+   "A": "are learned",
+   "B": "that learned",
+   "C": "they learned",
+   "D": "that they are learned"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 239,
+  "stem": "Beverly eats lots of snacks _____ meals. That’s why she is often too full to eat anything at\nmealtimes.",
+  "options": {
+   "A": "after",
+   "B": "between",
+   "C": "during",
+   "D": "from"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 240,
+  "stem": "My mom puts the _____ on to keep her hands away from water when she washes the dishes.",
+  "options": {
+   "A": "gloves",
+   "B": "jacket",
+   "C": "ring",
+   "D": "socks"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 241,
+  "stem": "Can you _____ your feet a little off the floor? I want to see if my keys are under the sofa.",
+  "options": {
+   "A": "check",
+   "B": "kick",
+   "C": "raise",
+   "D": "show"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 242,
+  "stem": "_____ of my sisters are older than I am. I’m the youngest of the three children in my family.",
+  "options": {
+   "A": "Both",
+   "B": "Few",
+   "C": "Most",
+   "D": "Some"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 243,
+  "stem": "The beach near our town is a very _____ place. Every summer at least one kid dies there in\nthe water.",
+  "options": {
+   "A": "dangerous",
+   "B": "exciting",
+   "C": "lonely",
+   "D": "popular"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 244,
+  "stem": "My wife enjoys going to the movies with her friends, but I like to watch TV at home by\n_____.",
+  "options": {
+   "A": "I",
+   "B": "me",
+   "C": "myself",
+   "D": "mine"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 245,
+  "stem": "For the past twenty years, my father _____ in a school library. But he’ll leave the job next\nmonth.",
+  "options": {
+   "A": "worked",
+   "B": "has worked",
+   "C": "is working",
+   "D": "works"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 246,
+  "stem": "It’s great that we can buy train tickets over the phone without going out. It _____ us a lot of\ntime.",
+  "options": {
+   "A": "lends",
+   "B": "prepares",
+   "C": "saves",
+   "D": "takes"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 247,
+  "stem": "Mozart _____ his first music when he was only six years old.",
+  "options": {
+   "A": "is writing",
+   "B": "has written",
+   "C": "will write",
+   "D": "wrote"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 248,
+  "stem": "Jill: Have you decided _____ you will celebrate your 30th birthday?\nSue: Yeah, I’m going to have a big barbecue party.",
+  "options": {
+   "A": "how",
+   "B": "where",
+   "C": "what",
+   "D": "when"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 249,
+  "stem": "Alison doesn’t like _____ what to do. She only does things she wants to do.",
+  "options": {
+   "A": "told",
+   "B": "to tell",
+   "C": "be told",
+   "D": "to be told"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 250,
+  "stem": "Josh has planned to make a trip to New York and _____ some of his friends there.",
+  "options": {
+   "A": "visit",
+   "B": "visits",
+   "C": "visiting",
+   "D": "visited"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 251,
+  "stem": "Ms. Johnson has been taking phone calls since she entered the office this morning.\nJust when she thought she could finally leave work, _____ call came in.",
+  "options": {
+   "A": "another",
+   "B": "each",
+   "C": "the next",
+   "D": "the other"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 252,
+  "stem": "We were so sure that Jerry _____ well on the difficult job. His past experience in other work\nshowed he was the right guy for it. So when he failed, no one believed it.",
+  "options": {
+   "A": "had done",
+   "B": "did",
+   "C": "has done",
+   "D": "would do"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 253,
+  "stem": "For Mike, the price is _____ important thing when he shops for jeans. He cares even more\nabout the shape and the size of the pockets.",
+  "options": {
+   "A": "the more",
+   "B": "the most",
+   "C": "the less",
+   "D": "the least"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 254,
+  "stem": "Ms. Liu usually gives us a lot of homework, _____ she didn’t give us any today.",
+  "options": {
+   "A": "but",
+   "B": "if",
+   "C": "or",
+   "D": "so"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 255,
+  "stem": "Playing games on the cellphone _____ popular with high school students.",
+  "options": {
+   "A": "is",
+   "B": "are",
+   "C": "being",
+   "D": "to be"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 256,
+  "stem": "There _____ more than twenty clubs in our school. Which one would you like to join?",
+  "options": {
+   "A": "has",
+   "B": "have",
+   "C": "is",
+   "D": "are"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 257,
+  "stem": "Diane had a bad cold last week. She is still too _____ to go mountain climbing with you.",
+  "options": {
+   "A": "busy",
+   "B": "short",
+   "C": "weak",
+   "D": "young"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 258,
+  "stem": "The book under Mary’s desk is _____, but I don’t know why it is there.",
+  "options": {
+   "A": "us",
+   "B": "me",
+   "C": "my",
+   "D": "mine"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 259,
+  "stem": "Last night a garbage truck hit a tree and turned over. Now the street is _____ with lots of\ngarbage.",
+  "options": {
+   "A": "dark",
+   "B": "dirty",
+   "C": "heavy",
+   "D": "poor"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 260,
+  "stem": "It almost killed Kevin to take care of his baby sister for one afternoon. He wondered how his\nmom could do _____ every day.",
+  "options": {
+   "A": "her",
+   "B": "it",
+   "C": "one",
+   "D": "them"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 261,
+  "stem": "Joyce tells her brother everything. She never _____ anything from him.",
+  "options": {
+   "A": "covers",
+   "B": "believes",
+   "C": "hides",
+   "D": "takes"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 262,
+  "stem": "Ben always uses his birthday as a(n) _____ to ask Dad to buy him something expensive.",
+  "options": {
+   "A": "action",
+   "B": "excuse",
+   "C": "prize",
+   "D": "rule"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 263,
+  "stem": "_____that last piece of pie? If not, can I have it? I didn’t eat much this morning.",
+  "options": {
+   "A": "Had you eaten",
+   "B": "Were you eating",
+   "C": "Do you eat",
+   "D": "Are you going to eat"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 264,
+  "stem": "Everyone in the class enjoys playing chess _____ Bill; he thinks the game is boring.",
+  "options": {
+   "A": "except",
+   "B": "for",
+   "C": "like",
+   "D": "of"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 265,
+  "stem": "In my school days, I to English radio programs every day. That was how I learned English at\nthat time.",
+  "options": {
+   "A": "listen",
+   "B": "have listened",
+   "C": "used to listen",
+   "D": "was listening"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 266,
+  "stem": "Tom’s voice _____ when he talks about his neighbors. He speaks faster, his face becomes\nredder and you can almost see fire in his eyes.",
+  "options": {
+   "A": "appears",
+   "B": "drops",
+   "C": "grows",
+   "D": "rises"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 267,
+  "stem": "_____ other waiters in the restaurant have worked here longer than Clark; only Lois and Lana\nstarted working here before him.",
+  "options": {
+   "A": "All",
+   "B": "Most",
+   "C": "Some",
+   "D": "Few"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 268,
+  "stem": "The _____ is so strong today that my hair keeps blowing in the air.",
+  "options": {
+   "A": "rain",
+   "B": "snow",
+   "C": "sun",
+   "D": "wind"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 269,
+  "stem": "When the baby cried, Mr. Wu _____ in the kitchen and did not hear it.",
+  "options": {
+   "A": "cooked",
+   "B": "was cooking",
+   "C": "has cooked",
+   "D": "is going to cook"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 270,
+  "stem": "I don’t have any money with me because I _____ my wallet this morning.",
+  "options": {
+   "A": "had lost",
+   "B": "would lose",
+   "C": "lost",
+   "D": "was losing"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 271,
+  "stem": "You need not only good luck but also hard work to become a _____ baseball player.",
+  "options": {
+   "A": "young",
+   "B": "successful",
+   "C": "happy",
+   "D": "friendly"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 272,
+  "stem": "The woman who lives next door to Ken is a _____ to him. They have never met and he\ndoesn’t even know her name.",
+  "options": {
+   "A": "daughter",
+   "B": "friend",
+   "C": "stranger",
+   "D": "teacher"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 273,
+  "stem": "With the new bus line, it is much more for Fanny to go to school. It saves her a lot of time\nnow.",
+  "options": {
+   "A": "useful",
+   "B": "possible",
+   "C": "interesting",
+   "D": "convenient"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 274,
+  "stem": "Dad: Have you brushed your teeth yet?\nAnn: No, but I _____ before I go to bed.",
+  "options": {
+   "A": "haven’t",
+   "B": "have",
+   "C": "won’t",
+   "D": "will"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 275,
+  "stem": "Alice: Do you know _____ Grandma is going to visit us?\nWilly: It’s next week. She told me on the phone. And we’ll take her to the national park.",
+  "options": {
+   "A": "where",
+   "B": "when",
+   "C": "whether",
+   "D": "why"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 276,
+  "stem": "It took the police lots of time _____ who entered Liu’s house and killed her one year ago.",
+  "options": {
+   "A": "and found out",
+   "B": "find out",
+   "C": "finding out",
+   "D": "to find out"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 277,
+  "stem": "Many famous people visit this restaurant. Popular singers like A-mei and Jay Chou _____\nhere with their friends.",
+  "options": {
+   "A": "to be often seen",
+   "B": "often seen",
+   "C": "are often seen",
+   "D": "and are often seen"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 278,
+  "stem": "The factory has been throwing trash into the river for years. Now _____ must be taken to\nstop this.",
+  "options": {
+   "A": "action",
+   "B": "chances",
+   "C": "exercise",
+   "D": "notes"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 279,
+  "stem": "The beach party tonight _____ the end of our summer vacation. Tomorrow we are all going\nback home and getting ready for school.",
+  "options": {
+   "A": "changes",
+   "B": "marks",
+   "C": "passes",
+   "D": "saves"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 280,
+  "stem": "Anyone who reads Loren’s business plan will quickly see some serious problems in it, or\n_____ feel something is not right.",
+  "options": {
+   "A": "at least",
+   "B": "even",
+   "C": "in fact",
+   "D": "still"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 281,
+  "stem": "I’ve wanted to read The Diary of a Young Girl for months, today I finally borrowed the book\nfrom the library.",
+  "options": {
+   "A": "and",
+   "B": "since",
+   "C": "so",
+   "D": "until"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 282,
+  "stem": "My sister wants to buy a car _____ she doesn’t have enough money.",
+  "options": {
+   "A": "because",
+   "B": "but",
+   "C": "if",
+   "D": "or"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 283,
+  "stem": "Jim always forgets my birthday. He has asked me many times and still can’t _____ it.",
+  "options": {
+   "A": "answer",
+   "B": "celebrate",
+   "C": "remember",
+   "D": "understand"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 284,
+  "stem": "The little girl was _____ by a truck on her way home and was badly hurt.",
+  "options": {
+   "A": "hit",
+   "B": "led",
+   "C": "lost",
+   "D": "paid"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 285,
+  "stem": "Excuse me. I really need to go now. My kids _____ for me at school.",
+  "options": {
+   "A": "are waiting",
+   "B": "were waiting",
+   "C": "wait",
+   "D": "waited"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 286,
+  "stem": "Amy’s father is very sick. The doctors can do nothing for him, so Amy went to the temple to\n_____ for him.",
+  "options": {
+   "A": "care",
+   "B": "count",
+   "C": "look",
+   "D": "pray"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 287,
+  "stem": "I’m glad that my school has students wear . I don’t have to worry about what clothes to wear\nto school.",
+  "options": {
+   "A": "belts",
+   "B": "caps",
+   "C": "gloves",
+   "D": "uniforms"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 288,
+  "stem": "We are surprised that Sally and Ray decided to get married. No one knows _____.\nThey often fight with each other and are unhappy together.",
+  "options": {
+   "A": "why",
+   "B": "where",
+   "C": "when",
+   "D": "how"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 289,
+  "stem": "I don’t think Katie will read any one of the books you’ve picked out for her: _____ look(s)\nvery boring.",
+  "options": {
+   "A": "it",
+   "B": "one",
+   "C": "some",
+   "D": "they"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 290,
+  "stem": "Jenny’s bag is very heavy because _____ filled with toy cars.",
+  "options": {
+   "A": "it is",
+   "B": "they are",
+   "C": "there is",
+   "D": "there are"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 291,
+  "stem": "_____ a map with you when you go to a place for the first time.",
+  "options": {
+   "A": "Have taken",
+   "B": "Take",
+   "C": "Taking",
+   "D": "To take"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 292,
+  "stem": "The weather _____ rainy and cloudy in the last few days. I hope the sun will come out soon.",
+  "options": {
+   "A": "has been",
+   "B": "had been",
+   "C": "will be",
+   "D": "would be"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 293,
+  "stem": "All the excuses Nick made _____ a lot about how much he hates to do the job.",
+  "options": {
+   "A": "say",
+   "B": "saying",
+   "C": "which say",
+   "D": "to say"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 294,
+  "stem": "Sabine walks so _____ in the apartment that sometimes you don’t even know she’s just\npassed by. You wonder if her feet ever touch the floor.",
+  "options": {
+   "A": "freely",
+   "B": "lightly",
+   "C": "shyly",
+   "D": "slowly"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 295,
+  "stem": "In the past, people thought it was a _____ idea to send e-mails and read news online, but now\nit is part of our everyday life.",
+  "options": {
+   "A": "simple",
+   "B": "popular",
+   "C": "good",
+   "D": "fresh"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 296,
+  "stem": "Chris: Which _____ looks better on me?\nPenny: I think purple’s better. You look great in purple.",
+  "options": {
+   "A": "color",
+   "B": "grade",
+   "C": "shape",
+   "D": "size"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 297,
+  "stem": "My cat got excited when it saw the boy _____ the birds.",
+  "options": {
+   "A": "catches",
+   "B": "catching",
+   "C": "to catch",
+   "D": "caught"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 298,
+  "stem": "Mr. Jackson is a very _____ writer; people of all ages enjoy his stories.",
+  "options": {
+   "A": "polite",
+   "B": "popular",
+   "C": "handsome",
+   "D": "honest"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 299,
+  "stem": "Carol sounded happy when we talked on the phone; I could feel joy in her _____.",
+  "options": {
+   "A": "eyes",
+   "B": "mail",
+   "C": "smile",
+   "D": "voice"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 300,
+  "stem": "Mark studies very hard and never _____ classes. He goes to school even when he is sick.",
+  "options": {
+   "A": "loses",
+   "B": "misses",
+   "C": "changes",
+   "D": "forgets"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 301,
+  "stem": "Have you got anything for Joe _____? He’d be happy to get your gift on his birthday.",
+  "options": {
+   "A": "almost",
+   "B": "either",
+   "C": "soon",
+   "D": "yet"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 302,
+  "stem": "Susan bought _____ bread in the supermarket, but she did not buy anything to drink.",
+  "options": {
+   "A": "many",
+   "B": "some",
+   "C": "any",
+   "D": "one"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 303,
+  "stem": "Playing sports at least three times a week _____ good for your health.",
+  "options": {
+   "A": "is",
+   "B": "are",
+   "C": "has",
+   "D": "have"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 304,
+  "stem": "My parents have different hobbies. One enjoys baking; _____ enjoys taking pictures.",
+  "options": {
+   "A": "another",
+   "B": "the next",
+   "C": "the other",
+   "D": "the second"
+  },
+  "answer": "C"
+ },
+ {
+  "num": 305,
+  "stem": "My mom told me to take care of _____ in England. She worried that I couldn’t eat or sleep\nwell there.",
+  "options": {
+   "A": "me",
+   "B": "myself",
+   "C": "her",
+   "D": "herself"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 306,
+  "stem": "The paint on the wall is not as _____ as it was ten years ago. It has changed from white to\ngray.",
+  "options": {
+   "A": "bright",
+   "B": "heavy",
+   "C": "sure",
+   "D": "young"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 307,
+  "stem": "I told you this road went the wrong way, but you just wouldn’t listen. Now we have to _____\nand take another road.",
+  "options": {
+   "A": "go ahead",
+   "B": "move away",
+   "C": "pass by",
+   "D": "turn back"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 308,
+  "stem": "The last five years have not been to ____ Jennie. Her face is covered with lines and she looks\nmuch older than she is.",
+  "options": {
+   "A": "kind",
+   "B": "special",
+   "C": "real",
+   "D": "enough"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 309,
+  "stem": "My dog Jimmy loves _____ with a comb. Every time I comb his hair, he will close his eyes\nand fall asleep.",
+  "options": {
+   "A": "to brush",
+   "B": "brushing",
+   "C": "to be brushing",
+   "D": "being brushed"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 310,
+  "stem": "This dress is pretty, _____ it does not look good on me.",
+  "options": {
+   "A": "so",
+   "B": "but",
+   "C": "or",
+   "D": "if"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 311,
+  "stem": "Getting up early on a cold morning is not easy, _____?",
+  "options": {
+   "A": "are you",
+   "B": "do you",
+   "C": "does it",
+   "D": "is it"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 312,
+  "stem": "Tonight I’ll stay at the office until I _____ the work.",
+  "options": {
+   "A": "finish",
+   "B": "am finishing",
+   "C": "finished",
+   "D": "will finish"
+  },
+  "answer": "A"
+ },
+ {
+  "num": 313,
+  "stem": "Charles _____ a day in the department store looking for a hat for his wife.",
+  "options": {
+   "A": "cost",
+   "B": "spent",
+   "C": "saw",
+   "D": "made"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 314,
+  "stem": "Tom _____ ten pounds over the past two months. He looks much thinner now.",
+  "options": {
+   "A": "loses",
+   "B": "has lost",
+   "C": "will lose",
+   "D": "was losing"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 315,
+  "stem": "I don’t like any one of these three watches. Can you show me _____ one?",
+  "options": {
+   "A": "the others",
+   "B": "other",
+   "C": "either",
+   "D": "another"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 316,
+  "stem": "The waiters are asked to be _____; they should always smile and remember to say\n“Welcome” and “Please.”",
+  "options": {
+   "A": "honest",
+   "B": "polite",
+   "C": "special",
+   "D": "strong"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 317,
+  "stem": "On Children’s Day, Ms. Lee, a famous storybook writer, _____ to Molly’s Bookstore to talk\nabout her new book. My two little kids just can’t wait to see her.",
+  "options": {
+   "A": "came",
+   "B": "was coming",
+   "C": "has come",
+   "D": "is going to come"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 318,
+  "stem": "No one thought James would appear at Katie’s party. So when he _____, everyone was\nsurprised and could not believe their eyes.",
+  "options": {
+   "A": "would",
+   "B": "was",
+   "C": "had",
+   "D": "did"
+  },
+  "answer": "D"
+ },
+ {
+  "num": 319,
+  "stem": "B&J Café known as the tallest building in town. However, O&G Restaurant became the\ntallest building in 2010.",
+  "options": {
+   "A": "has been",
+   "B": "had been",
+   "C": "is",
+   "D": "would be"
+  },
+  "answer": "B"
+ },
+ {
+  "num": 320,
+  "stem": "Actor David Piper became tired of talking about the movie _____ after he was interviewed\nabout it many times.",
+  "options": {
+   "A": "he is famous",
+   "B": "that he is famous",
+   "C": "that is famous for",
+   "D": "he is famous for"
+  },
+  "answer": "D"
+ }
+]
