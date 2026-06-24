@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import json
+import json, re
 qs = json.load(open('/sessions/upbeat-clever-darwin/mnt/outputs/questions.json', encoding='utf-8'))
 
 # ---- corrections (first section: 找多餘字) ----
@@ -138,8 +138,20 @@ for q in qs:
 eng = json.load(open('/sessions/upbeat-clever-darwin/mnt/outputs/eng_questions.json', encoding='utf-8'))
 eng_exp = json.load(open('/sessions/upbeat-clever-darwin/mnt/outputs/eng_exp.json', encoding='utf-8'))
 eng_trans = _load('eng_trans.json')
+# ---- 補回 OCR 掉失的填答底線 ----
+eng_stem_fix = {
+ 199:'Doraemon, a blue Japanese robot cat, has hated mice since his ears _____ by a mouse.',
+ 205:'Scott wasn’t sure if the young woman before him was _____ pulled him out of a car on fire.',
+ 235:'If you’re interested in our business plan, _____ this number and ask for Ms. Lee. She’ll answer your questions.',
+ 265:'In my school days, I _____ to English radio programs every day. That was how I learned English at that time.',
+ 273:'With the new bus line, it is much more _____ for Fanny to go to school. It saves her a lot of time now.',
+ 281:'I’ve wanted to read The Diary of a Young Girl for months, _____ today I finally borrowed the book from the library.',
+ 287:'I’m glad that my school has students wear _____. I don’t have to worry about what clothes to wear to school.',
+ 319:'B&J Café _____ known as the tallest building in town. However, O&G Restaurant became the tallest building in 2010.',
+}
 for e in eng:
-    qs.append({'num': e['num'], 'sec': 99, 'passage': '', 'stem': e['stem'],
+    stem = eng_stem_fix.get(e['num'], e['stem'])
+    qs.append({'num': e['num'], 'sec': 99, 'passage': '', 'stem': stem,
                'options': e['options'], 'answer': e['answer'], 'c': '英文基礎能力',
                'e': eng_exp.get(str(e['num']), ''), 'tr': eng_trans.get(str(e['num']), '')})
 
@@ -160,11 +172,52 @@ for q in qs:
     for k, v in table_fix_pass.items():
         if q['passage'] and k in q['passage']: q['passage'] = v
 
+# ---- 答案更正表(原卷標錯、且正確選項存在者，改以正解計分) ----
+ans_override = {
+ 67:'B', 69:'A', 70:'B', 71:'B',                                  # 語詞類比
+ 238:'B', 324:'C', 338:'D', 339:'B',                             # 計算應用
+ 503:'C', 533:'A', 541:'B', 544:'D', 588:'A', 603:'D', 611:'C',  # 英文基礎能力
+}
 data = [{'i': i+1, 'c': q['c'], 'p': q['passage'], 's': q['stem'], 'o': q['options'],
-         'a': q['answer'], 'e': q['e'], 'tr': q.get('tr', '')}
+         'a': ans_override.get(i+1, q['answer']), 'oa': q['answer'],
+         'e': q['e'], 'tr': q.get('tr', '')}
         for i, q in enumerate(qs)]
 payload = json.dumps(data, ensure_ascii=False)
 subjects_meta = json.dumps([{'name': n, 'desc': DESC[n], 'n': cnt.get(n, 0)} for n in ORDER], ensure_ascii=False)
+
+# ---- 英文常見片語(含中英對照例句，例句取自該題正確完整句) ----
+_eng_by_num = {e['num']: e for e in eng}
+def _fill(stem, ans):
+    if re.search(r'[_＿]{2,}', stem):
+        return re.sub(r'\s+',' ', re.sub(r'[_＿]{2,}', ' '+ans+' ', stem, count=1)).strip()
+    return stem
+phrase_list = [
+ ("hardly ever","幾乎不曾",2),("walk past","走過、經過",9),("get along with","與…相處融洽",24),
+ ("lose weight","減重",25),("except for","除了…之外",26),("pick sb up","(開車)接某人",29),
+ ("whether … or not","是否…",35),("be good at + V-ing","擅長(做)…",47),("take a seat","請坐、就座",58),
+ ("hear of","聽說過",62),("go off","(鬧鐘／計時器)響起",66),("connect to","連上、連接",68),
+ ("in debt","負債",76),("by bus","搭公車(by + 交通工具)",78),("be in charge of","負責…",79),
+ ("accompany sb to","陪某人去…",86),("lose one's temper","發脾氣",97),("such a + 形容詞 + 名詞","如此…的…",107),
+ ("take sb to","帶某人去…",109),("shut down","關機、關閉",128),("talk to sb","和某人說話",129),
+ ("line up","排隊",134),("mistake A for B","把 A 誤認為 B",139),("hold one's breath","憋氣",142),
+ ("be allergic to","對…過敏",144),("figure out","想出、弄清楚",148),("go sailing","去乘船、航行",151),
+ ("enjoy + V-ing","喜歡(做)…",152),("make sure","務必、確保",159),("save sb sth","替某人省下…",164),
+ ("be proud of","以…為榮、為…驕傲",169),("above sea level","海拔(高於海平面)",179),("used to + V","過去(經常)…",209),
+ ("It takes sb time to V","花某人時間做…",216),("between meals","三餐之間",239),("by oneself","獨自",244),
+ ("use … as an excuse","拿…當藉口",262),("be (often) seen","常被看到(被動)",277),("take action","採取行動",278),
+ ("mark the end of","標誌…的結束",279),("at least","至少",280),("pray for","為…祈禱",286),
+ ("miss class","缺課",300),("take care of oneself","照顧好自己",305),("turn back","折返、回頭",307),
+ ("spend time (in) V-ing","花時間(做)…",313),
+]
+PHRASES=[]
+for ph,mn,n in phrase_list:
+    e=_eng_by_num.get(n)
+    if not e: continue
+    stem = eng_stem_fix.get(n, e['stem'])
+    correct = ans_override.get(466+n, e['answer'])
+    en = _fill(stem, e['options'].get(correct, e['options'][e['answer']]))
+    PHRASES.append({'p':ph,'m':mn,'en':en,'zh':eng_trans.get(str(n),'')})
+phrases_payload = json.dumps(PHRASES, ensure_ascii=False)
 
 # ================= 各科教學 =================
 LESSONS = {
@@ -550,6 +603,17 @@ html = '''<!DOCTYPE html>
   .mi .mi-ico{flex:none;width:22px;height:22px;display:flex;align-items:center;justify-content:center;color:inherit;}
   .mi .mi-label{flex:1;}
   .mi .mi-caret{flex:none;transition:transform .2s;color:var(--muted);}
+  .mi-badge{flex:none;min-width:22px;height:22px;padding:0 7px;border-radius:99px;background:#ffd54a;
+    color:#1a1a1a;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;}
+  .sidebar.collapsed .mi-badge{display:none;}
+  /* 錯題練習 類別篩選 */
+  .wcats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;}
+  .wcat{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;
+    padding:7px 14px;min-height:40px;cursor:pointer;font-weight:700;font-size:15px;display:flex;align-items:center;gap:7px;}
+  .wcat:hover{border-color:var(--brand2);}
+  .wcat.active{background:#ffd54a;color:#1a1a1a;border-color:#f4c20a;}
+  .wcat-n{background:rgba(0,0,0,.12);color:inherit;border-radius:99px;padding:0 8px;font-size:13px;font-weight:800;}
+  .wcat.active .wcat-n{background:rgba(0,0,0,.18);color:#1a1a1a;}
   .mgroup.open .mi .mi-caret{transform:rotate(90deg);}
   .submenu{display:none;flex-direction:column;gap:2px;margin:2px 0 6px 0;}
   .mgroup.open .submenu{display:flex;}
@@ -636,7 +700,8 @@ html = '''<!DOCTYPE html>
     background:var(--soft);color:var(--brand);display:none;}
   .result.show{display:block;}
   .nav{display:flex;justify-content:space-between;align-items:center;margin-top:18px;gap:10px;}
-  select,input[type=search]{font:inherit;font-size:16px;min-height:44px;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);}
+  select,input[type=search]{font:inherit;font-size:16px;min-height:44px;padding:8px 12px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);}
+  select option{background:var(--card);color:var(--ink);}
   .foot{text-align:center;color:var(--muted);font-size:16px;margin-top:30px;}
   .pill{display:inline-block;background:var(--soft);color:var(--brand);border-radius:99px;
     padding:2px 10px;font-size:16px;font-weight:700;}
@@ -691,6 +756,16 @@ html = '''<!DOCTYPE html>
   .vcard.flip .vm{display:block;}
   .vpos{font-size:16px;color:var(--brand);font-weight:700;margin-right:4px;}
   .vkk{font-size:16px;color:var(--muted);font-weight:500;}
+  /* 片語卡 */
+  .plist{display:flex;flex-direction:column;gap:10px;}
+  .pcard{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card);}
+  .pph{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;}
+  .pname{font-size:17px;font-weight:800;}
+  .pmn{font-size:16px;color:var(--muted);}
+  .pex{margin-top:8px;border-left:3px solid var(--brand2);padding-left:10px;}
+  .pen{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;font-size:16px;font-weight:600;}
+  .pen .ptxt{flex:1;}
+  .pzh{font-size:16px;color:var(--txt);margin-top:3px;}
   /* 收合區塊 */
   .acchead{font-size:16px;font-weight:800;color:var(--brand);letter-spacing:.5px;cursor:pointer;
     display:flex;justify-content:space-between;align-items:center;user-select:none;}
@@ -781,7 +856,16 @@ html = '''<!DOCTYPE html>
     </div>
   </div>
 
-  <!-- ============ 科目教學 ============ -->
+  <!-- ============ 錯題練習 ============ -->
+  <div id="view-wrong" class="hidden">
+    <div class="bar"><div class="meta">
+      <span style="font-weight:800;color:var(--ink);font-size:18px">錯題練習</span>
+      <span>剩餘錯題 <b id="wcount">0</b> 題</span>
+    </div></div>
+    <div id="wrongbody"></div>
+  </div>
+
+  <!-- ============ 答案解析 ============ -->
   <div id="view-learn" class="hidden">
     <div class="bar"><div class="lnav" id="lnav"></div></div>
     <div id="lesson" class="lesson"></div>
@@ -802,12 +886,14 @@ html = '''<!DOCTYPE html>
 <script id="lessons" type="application/json">__LESSONS__</script>
 <script id="idioms" type="application/json">__IDIOMS__</script>
 <script id="vocab" type="application/json">__VOCAB__</script>
+<script id="phrases" type="application/json">__PHRASES__</script>
 <script>
 const QS = JSON.parse(document.getElementById('data').textContent);
 const SUBJ = JSON.parse(document.getElementById('subjmeta').textContent);
 const LESSONS = JSON.parse(document.getElementById('lessons').textContent);
 const IDIOMS = JSON.parse(document.getElementById('idioms').textContent);
 const VOCAB = JSON.parse(document.getElementById('vocab').textContent);
+const PHRASES = JSON.parse(document.getElementById('phrases').textContent);
 const PER = 10, LET = ['A','B','C','D','E','F'];
 const el = id => document.getElementById(id);
 const esc = t => (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
@@ -1014,7 +1100,8 @@ el('grade').addEventListener('click',()=>{
   if(graded[key]){ g.forEach(q=>delete answers[q.i]); delete graded[key]; render(); return; }
   const un=g.filter(q=>!answers[q.i]).length;
   if(un>0 && !confirm(`還有 ${un} 題未作答，仍要批改嗎？`)) return;
-  let right=0; g.forEach(q=>{ if(answers[q.i]===q.a) right++; }); graded[key]={right}; render();
+  let right=0; g.forEach(q=>{ if(answers[q.i]===q.a) right++; else if(answers[q.i]) wrong.add(q.i); }); graded[key]={right};
+  saveWrong(); updateWrongBadge(); render();
 });
 el('prev').addEventListener('click',()=>{ if(gi>0){gi--;render();} });
 el('next').addEventListener('click',()=>{ if(gi<SUBJ[si].groups.length-1){gi++;render();} });
@@ -1048,6 +1135,12 @@ function renderLesson(){
   if(name==='英文基礎能力'){
     h+=accCard(`全民英檢中級以上單字卡（${VOCAB.length} 張）`,
       `<div style="font-size:16px;color:var(--muted);margin-bottom:8px">點卡片翻面看中文，按 ${spkIcon(14)} 聽發音。</div><div class="vgrid" id="vgrid"></div>`, false);
+    let ph='';
+    PHRASES.forEach(p=>{
+      ph+=`<div class="pcard"><div class="pph"><span class="pname">${esc(p.p)}</span><span class="pmn">${esc(p.m)}</span></div>
+        <div class="pex"><div class="pen"><span class="ptxt">${esc(p.en)}</span>${spkBtn(p.en,true)}</div><div class="pzh">${esc(p.zh)}</div></div></div>`;
+    });
+    h+=accCard(`常見片語（${PHRASES.length} 則・含中英例句）`, `<div class="plist">${ph}</div>`, false);
   }
   // 範例
   if(L.ex){
@@ -1117,15 +1210,103 @@ function renderIdioms(kw){
   el('icount').textContent=kw?`符合「${kw}」：${n} 則`:`共 ${IDIOMS.length} 則`;
 }
 
+// ----- 錯題練習(localStorage 持久化) -----
+let wrong=new Set();
+try{ const a=JSON.parse(localStorage.getItem('wrongIds')||'[]'); if(Array.isArray(a)) wrong=new Set(a); }catch(e){}
+function saveWrong(){ try{ localStorage.setItem('wrongIds', JSON.stringify([...wrong])); }catch(e){} }
+function removeWrong(id){ wrong.delete(id); }
+function updateWrongBadge(){
+  const b=el('wrongBadge'); if(b){ b.textContent=wrong.size; b.style.display=wrong.size?'':'none'; }
+  const c=el('wcount'); if(c) c.textContent=wrong.size;
+}
+const wState={}; let wMsg='';
+function wCard(q){
+  const st=wState[q.i]||{}, isG=!!st.graded;
+  let h='<div class="card'+(isG?' graded':'')+'">';
+  if(q.p) h+=`<div class="passage">${renderStem(q.p)}</div>`;
+  h+=`<div class="qnum">第 ${q.i} 題 · ${esc(q.c)}</div>`;
+  if(q.c==='英文基礎能力') h+=`<div class="stemrow"><div class="stem">${renderStem(q.s)}</div>${spkBtn(q.s)}</div>`;
+  else h+=`<div class="stem">${renderStem(q.s)}</div>`;
+  h+='<div class="opts">';
+  LET.forEach(L=>{ if(q.o[L]===undefined) return;
+    const chosen=st.answer===L; let cls='opt'+(chosen?' sel':''), mk='';
+    if(isG){ if(L===q.a){cls='opt correct';mk='<span class="mark">✓ 正解</span>';} else if(chosen){cls='opt wrong';mk='<span class="mark">✗</span>';} }
+    const ospk=q.c==='英文基礎能力'?spkBtn(q.o[L],true):'';
+    h+=`<label class="${cls}"><input type="radio" name="w${q.i}" value="${L}" ${chosen?'checked':''} ${isG?'disabled':''}><span class="lbl">${L}</span><span class="txt">${esc(q.o[L])}</span>${ospk}${mk}</label>`;
+  });
+  h+='</div>';
+  if(isG){
+    if(q.e||q.tr){ let xh=''; if(q.tr) xh+=`<div><b>翻譯：</b>${esc(q.tr)}</div>`; if(q.e) xh+=`<div><b>解析：</b>${esc(q.e)}</div>`; h+=`<div class="qexp${isWarn(q.e)?' warn':''}">${xh}</div>`; }
+  }
+  h+='</div>'; return h;
+}
+let wgi=0, wCat='';
+function renderWrong(){
+  updateWrongBadge();
+  const box=el('wrongbody'); if(!box) return;
+  const all=QS.filter(q=>wrong.has(q.i));
+  if(all.length===0){
+    wgi=0; wCat='';
+    box.innerHTML='<div class="card" style="text-align:center;color:var(--muted);padding:34px 16px">目前沒有錯題。<br>在「測驗練習」中答錯的題目會自動收集到這裡，<br>在這裡答對後就會移除。</div>';
+    if(wMsg){ box.insertAdjacentHTML('afterbegin', `<div class="result show">${esc(wMsg)}</div>`); wMsg=''; }
+    return;
+  }
+  const cnts={}; all.forEach(q=>cnts[q.c]=(cnts[q.c]||0)+1);
+  const cats=SUBJ.map(s=>s.name).filter(c=>cnts[c]);
+  if(wCat && !cnts[wCat]) wCat='';
+  const list = wCat ? all.filter(q=>q.c===wCat) : all;
+  const groups=[]; for(let i=0;i<list.length;i+=PER) groups.push(list.slice(i,i+PER));
+  if(wgi>=groups.length) wgi=Math.max(0,groups.length-1); if(wgi<0) wgi=0;
+  const g=groups[wgi]||[];
+  let h='';
+  if(wMsg){ h+=`<div class="result show">${esc(wMsg)}</div>`; wMsg=''; }
+  // 類別篩選(含各類別數量)
+  h+='<div class="wcats">';
+  h+=`<button class="wcat${wCat===''?' active':''}" data-cat="">全部 <span class="wcat-n">${all.length}</span></button>`;
+  cats.forEach(c=>{ h+=`<button class="wcat${wCat===c?' active':''}" data-cat="${esc(c)}">${esc(c)} <span class="wcat-n">${cnts[c]}</span></button>`; });
+  h+='</div>';
+  h+=`<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin:0 0 10px">
+        <span>跳至題組：<select id="wsel"></select></span>
+        <button class="ghost" id="wreset">重新作答</button>
+        <button class="ghost" id="wclear">清空錯題</button>
+      </div>`;
+  g.forEach(q=>{ h+=wCard(q); });
+  h+=`<div class="nav"><button class="ghost" id="wprev">← 上一組</button><button class="primary" id="wgrade">提交批改</button><button class="ghost" id="wnext">下一組 →</button></div>`;
+  box.innerHTML=h;
+  box.querySelectorAll('.wcat').forEach(b=>b.addEventListener('click',()=>{ wCat=b.dataset.cat; wgi=0; renderWrong(); }));
+  const sel=el('wsel');
+  sel.innerHTML=groups.map((gr,idx)=>`<option value="${idx}" ${idx===wgi?'selected':''}>第 ${idx+1} 組（${gr.length} 題）</option>`).join('');
+  sel.addEventListener('change',e=>{ wgi=parseInt(e.target.value); renderWrong(); });
+  el('wprev').disabled=wgi===0; el('wnext').disabled=wgi>=groups.length-1;
+  el('wprev').addEventListener('click',()=>{ if(wgi>0){wgi--;renderWrong();} });
+  el('wnext').addEventListener('click',()=>{ if(wgi<groups.length-1){wgi++;renderWrong();} });
+  box.querySelectorAll('input[type=radio]').forEach(r=>{
+    r.addEventListener('change',e=>{ const id=parseInt(e.target.name.slice(1)); (wState[id]=wState[id]||{}).answer=e.target.value;
+      e.target.closest('.opts').querySelectorAll('.opt').forEach(o=>o.classList.remove('sel')); e.target.closest('.opt').classList.add('sel'); });
+  });
+  el('wgrade').addEventListener('click',()=>gradeWrong(g));
+  el('wreset').addEventListener('click',()=>{ g.forEach(q=>{ wState[q.i]={}; }); renderWrong(); });
+  el('wclear').addEventListener('click',()=>{ if(confirm('確定要清空全部錯題嗎？此動作無法復原。')){ wrong.clear(); saveWrong(); wgi=0; wCat=''; for(const k in wState) delete wState[k]; wMsg=''; renderWrong(); } });
+}
+function gradeWrong(g){
+  let removed=0, answered=0;
+  g.forEach(q=>{ const st=wState[q.i]; if(!st||!st.answer) return; st.graded=true; answered++; if(st.answer===q.a){ removeWrong(q.i); removed++; } });
+  saveWrong();
+  wMsg = answered ? `本組作答 ${answered} 題，答對並移除 ${removed} 題，剩餘錯題 ${wrong.size} 題。` : '請先作答再批改。';
+  renderWrong();
+}
+
 // ----- 側邊主選單(可收合 / 展開子選項 / RWD 抽屜) -----
 const ICONS={
  quiz:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',
  learn:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2z"/><path d="M19 18H6a2 2 0 0 0-2 2"/></svg>',
  info:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h5"/></svg>',
+ wrong:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4.5"/><path d="M12 16h.01"/></svg>',
  caret:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>'
 };
 const MENU=[
  {view:'quiz', label:'測驗練習', icon:ICONS.quiz, subs:SUBJ.map((s,i)=>({label:s.name,i}))},
+ {view:'wrong',label:'錯題練習', icon:ICONS.wrong,subs:null},
  {view:'learn',label:'答案解析', icon:ICONS.learn,subs:SUBJ.map((s,i)=>({label:s.name,i}))},
  {view:'info', label:'簡章',     icon:ICONS.info, subs:null},
 ];
@@ -1137,7 +1318,8 @@ function buildMenu(){
   MENU.forEach(g=>{
     const grp=document.createElement('div'); grp.className='mgroup'; grp.dataset.view=g.view;
     const caret=g.subs?`<span class="mi-caret">${ICONS.caret}</span>`:'';
-    grp.innerHTML=`<div class="mi" data-view="${g.view}" title="${esc(g.label)}"><span class="mi-ico">${g.icon}</span><span class="mi-label">${esc(g.label)}</span>${caret}</div>`;
+    const badge=g.view==='wrong'?`<span class="mi-badge" id="wrongBadge">0</span>`:'';
+    grp.innerHTML=`<div class="mi" data-view="${g.view}" title="${esc(g.label)}"><span class="mi-ico">${g.icon}</span><span class="mi-label">${esc(g.label)}</span>${badge}${caret}</div>`;
     if(g.subs){
       const sm=document.createElement('div'); sm.className='submenu';
       g.subs.forEach(su=>{
@@ -1167,6 +1349,8 @@ function switchView(v){
   el('view-quiz').classList.toggle('hidden', v!=='quiz');
   el('view-learn').classList.toggle('hidden', v!=='learn');
   el('view-info').classList.toggle('hidden', v!=='info');
+  el('view-wrong').classList.toggle('hidden', v!=='wrong');
+  if(v==='wrong') renderWrong();
   setActive();
   if(isMobile()) closeDrawer();
   window.scrollTo({top:0});
@@ -1191,6 +1375,7 @@ renderSubjects();
 renderLnav();
 renderLesson();
 switchView('quiz');
+updateWrongBadge();
 const qg=document.querySelector('.mgroup[data-view="quiz"]'); if(qg) qg.classList.add('open');
 </script>
 </body>
@@ -1198,7 +1383,8 @@ const qg=document.querySelector('.mgroup[data-view="quiz"]'); if(qg) qg.classLis
 
 html = (html.replace('__DATA__', payload).replace('__SUBJ__', subjects_meta)
             .replace('__LESSONS__', lessons_payload).replace('__IDIOMS__', idiom_payload)
-            .replace('__VOCAB__', vocab_payload).replace('__INFO__', info_html))
+            .replace('__VOCAB__', vocab_payload).replace('__INFO__', info_html)
+            .replace('__PHRASES__', phrases_payload))
 open('/sessions/upbeat-clever-darwin/mnt/outputs/index.html','w',encoding='utf-8').write(html)
 print('OK size KB:', round(len(html)/1024,1), '| lessons:', len(LESSONS), '| idioms:', len(idioms))
 print('subjects:', [s for s in ORDER])
